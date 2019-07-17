@@ -13,7 +13,7 @@ Thanks for the help.
 
 Amy
 
-### Alfonso - answer
+### ALFONSO - ANSWER
 
 Hi Amy-
 
@@ -26,10 +26,10 @@ Check out our [list of error messages](https://support.plaid.com/hc/en-us/articl
 Regarding `public_tokens` and `access_tokens`:
 
 A public token is by Plaid Link when creating an item. It is for one-time use and expires after 30 minutes. A public token is generated the `POST /item/public_token/create` endpoint.
-Read more about [public tokens here.](https://plaid.com/docs/#creating-public-tokens)
+- Read more about [public tokens here.](https://plaid.com/docs/#creating-public-tokens)
 
 On the other hand, an access token is a rotatable token affiliated with an item.  It is used to make product requests on behalf of an item. You can generate an access token by exchanging a public token (this public token becomes invalidated once it has been successfully exchanged for an access token).
-Read more about [the exchange token flow here.](https://plaid.com/docs/#exchange-token-flow)
+- Read more about [the exchange token flow here.](https://plaid.com/docs/#exchange-token-flow)
 
 I hope all of this information has been helpful to you.  Should you have any questions, feel free to reach out to me- I would be happy to assist!
 
