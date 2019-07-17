@@ -36,6 +36,7 @@ On the other hand, an access token is a rotatable token affiliated with an item.
 I hope all of this information has been helpful to you.  Should you have any questions, feel free to reach out to me- I would be happy to assist!
 
 All the best,
+
 Alfonso Dumlao
 
 
