@@ -13,6 +13,36 @@ Thanks for the help.
 
 Amy
 
+### Alfonso - answer
+
+Hi Amy-
+
+I'm happy to help you get set up with Plaid.
+
+Let's start with the `INVALID_CREDENTIALS` error you are receiving when trying to create an `item`.  You are receiving this error message because the financial institution you are trying to access cannot validate the credentials you provided.  I suggest double checking if the login details you are providing are correct.  If you are using the Plaid Link to initialize, re-enter your credentials in case of a typo or missing characters.
+
+Check out our [list of error messages](https://support.plaid.com/hc/en-us/articles/360012859833-Handling-Plaid-Errors), as well as our list of [`Item` specific error codes](https://plaid.com/docs/#item-errors).
+
+Regarding `public_tokens` and `access_tokens`:
+
+A public token is by Plaid Link when creating an item. It is for one-time use and expires after 30 minutes. A public token is generated the `POST /item/public_token/create` endpoint.
+Read more about [public tokens here.](https://plaid.com/docs/#creating-public-tokens)
+
+On the other hand, an access token is a rotatable token affiliated with an item.  It is used to make product requests on behalf of an item. You can generate an access token by exchanging a public token (this public token becomes invalidated once it has been successfully exchanged for an access token).
+Read more about [the exchange token flow here.](https://plaid.com/docs/#exchange-token-flow)
+
+I hope all of this information has been helpful to you.  Should you have any questions, feel free to reach out to me- I would be happy to assist!
+
+All the best,
+Alfonso Dumlao
+
+
+
+
+
+
+
+
 ## Challenge 2
 
 Hi Plaid,
