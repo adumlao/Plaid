@@ -88,8 +88,8 @@ Once you've authenticated for the application, please provide the following info
 
 ### ALFONSO - CHALLENGE 3 RESPONSE
 
-`ITEM_ID:` wk8x5348m1CwRMMkK5XViJxPnrllWjtr68XX6
-`ACCESS_TOKEN:` access-sandbox-40ce2de0-704c-4842-a7ca-46f0bbb5576e
+- `ITEM_ID:` wk8x5348m1CwRMMkK5XViJxPnrllWjtr68XX6
+- `ACCESS_TOKEN:` access-sandbox-40ce2de0-704c-4842-a7ca-46f0bbb5576e
 
 * Accounts and their balances from `/accounts/get`
 
@@ -106,9 +106,9 @@ Once you've authenticated for the application, please provide the following info
 
 * Item details from `/item/get`
 
-`Institution name:`	TD Bank
-`Billed products:`	transactions
-`Available products:`	assets, auth, balance, identity, income
+- `Institution name:`	TD Bank
+- `Billed products:`	transactions
+- `Available products:`	assets, auth, balance, identity, income
 
 
 ## Challenge 4
