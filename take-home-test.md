@@ -13,7 +13,7 @@ Thanks for the help.
 
 Amy
 
-### ALFONSO - ANSWER
+### ALFONSO - CHALLENGE 1 RESPONSE
 
 Hi Amy-
 
@@ -58,6 +58,24 @@ Samantha
 
 [link to call response](https://gist.github.com/plaid-cj/9e929246c3e0be778c9531e147a34629)
 
+### ALFONSO - CHALLENGE 2 RESPONSE
+
+Hi Samantha,
+
+Thank you for providing me with your account information- that made it easier for me to investigate the balance discrepancy.
+
+It looks like you have a pending balance of `$89.40` from `Sparkfun` on `2019-03-16`.  The id for this transaction is `E2B4x3U7M23Zz9w3XCMn21PpvBh4SAOMk3Q`.
+
+The available balance is the amount of funds available to be withdrawn from an account, as determined by the financial institution. The available balance typically, but not always, equals the current balance less any pending outflows plus any pending inflows.  Whenever a transaction has the property `"pending": true`, it identifies the transaction as pending or unsettled; pending transaction details (description, amount) may change before they are settled.
+
+- [Read more about balances here.](https://plaid.com/docs/#balance)
+
+
+I hope all of this information has been helpful to you.  Should you have any questions, feel free to reach out to me- I would be happy to assist!
+
+All the best,
+
+Alfonso Dumlao
 
 ## Challenge 3
 
