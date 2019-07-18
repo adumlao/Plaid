@@ -118,3 +118,38 @@ Write a script that uses Plaid’s `/institution/get` endpoint to output the tot
 * has the word "first" in the name
 
 Please also include the script you used to arrive at these answers.
+
+### ALFONSO - CHALLENGE 4 RESPONSE
+
+`440 institutions` support Plaid's identity product and has the word "first" in the name
+
+```
+const plaid = require('plaid');
+
+const plaidClient = new plaid.Client("5d309f7ad3b983001272c772", "98ca0166edc543fb97dcc0a29f95ef", "896b28393002eaaa1e1c53d53dffe4", "https://sandbox.plaid.com", {version: '2018-05-22'});
+
+
+
+const increment = () => {
+  for(let i=0; i<15000; i+=500){
+    getInst(i);
+  }
+}
+
+let emptyInst = []
+
+function getInst(offset){
+  plaidClient.getInstitutions(500, offset, (err, res) => {
+    const institutions = res.institutions.filter(x=> x.products.map(x=> x.toLowerCase()).includes("identity") && x.name.toLowerCase().includes("first"));
+
+    emptyInst.push(institutions.length)
+
+    const added = emptyInst.reduce((a, b) => a + b, 0)
+
+    console.log(added + " institutions support Plaid's identity product and has the word first in the name");
+  });
+}
+
+increment();
+
+```
