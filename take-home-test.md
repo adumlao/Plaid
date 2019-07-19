@@ -121,7 +121,48 @@ Please also include the script you used to arrive at these answers.
 
 ### ALFONSO - CHALLENGE 4 RESPONSE
 
-`440 institutions` support Plaid's identity product and has the word "first" in the name
+`440 institutions` support Plaid's identity product and has the word "first" in the name.
+
+- CODE using axios:
+```
+const axios = require('axios')
+
+let emptyInst = []
+
+const grab = async (offset) => {
+   try {
+     const res = await axios.post("https://sandbox.plaid.com/institutions/get", {
+         "client_id":'5d309f7ad3b983001272c772',
+         "secret":'98ca0166edc543fb97dcc0a29f95ef',
+         "count": 500,
+         "offset": offset
+     });
+
+     const institutions = res.data.institutions.filter(x=> x.products.map(x=> x.toLowerCase()).includes("identity") && x.name.toLowerCase().includes("first"));
+
+     emptyInst.push(institutions.length)
+
+     const added = emptyInst.reduce((a, b) => a + b, 0)
+
+     console.log(added + " institutions support Plaid's identity product and has the word first in the name");
+
+
+  } catch(error) {
+     console.log(error.message);
+  }
+};
+
+const increment = () => {
+  for(let i=0; i<15000; i+=500){
+    grab(i);
+  }
+}
+
+increment();
+
+```
+
+- CODE using the Plaid-node:
 
 ```
 const plaid = require('plaid');
